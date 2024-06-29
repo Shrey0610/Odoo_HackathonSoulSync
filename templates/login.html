@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+	<meta charset="UTF-8">
 	<link rel="stylesheet" href="/assets/css/login.css">
 	<script defer src="/packages/login.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-
 	<link rel="stylesheet" href="/css/login.css">
-
-
-
+	<title>Login</title>
 </head>
-
 <body>
-	<meta charset="UTF-8">
-
-
 	<div class="container" id="container">
 		<div class="form-container sign-up-container">
 			<form action="/php/Post.php" method="post">
@@ -33,12 +24,11 @@
 				<input type="email" name="Emailn" placeholder="Email" />
 				<input type="password" name="Passwordn" placeholder="Password" />
 				<button>Sign Up</button>
-				<a href="/templates/index.html" class="btn btn-secondary btn-lg active" role="button"
-					aria-pressed="true">Home</a>
+				<a href="/Serene 7/templates/index.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Home</a>
 			</form>
 		</div>
 		<div class="form-container sign-in-container">
-			<form action="/php/Postp.php" method="post">
+			<form id="loginForm" action="/php/Postp.php" method="post">
 				<h1>Login</h1>
 				<div class="social-container">
 					<a href="https://www.google.com" class="social"><i class="fa-brands fa-google"></i></a>
@@ -47,11 +37,10 @@
 				</div>
 				<span>or use your account</span>
 				<input type="email" name="Emailp" placeholder="Email" />
-				<input type="password" name="Password" placeholder="Password" />
+				<input type="password" name="Passwordp" placeholder="Password" />
 				<a href="#">Forgot your password?</a>
-				<button>Sign In</button>
-				<a href="/templates/index.html" class="btn btn-secondary btn-lg active" role="button"
-					aria-pressed="true">Home</a>
+				<button type="submit">Sign In</button>
+				<a href="/Serene 7/templates/index.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Home</a>
 			</form>
 		</div>
 		<div class="overlay-container">
@@ -73,39 +62,38 @@
 	<footer>
 		<p>
 			Created by <i class="fa fa-heart"></i> by
-			<a target="_blank" href="http://127.0.0.1:5502/templates/business.html">KAVS</a>
-
-			<a target="_blank" href="http://127.0.0.1:5502/templates/business.html">here</a>.
+			<a target="_blank" href="http://127.0.0.1:5502/business.html">SDD</a>
+			<a target="_blank" href="http://127.0.0.1:5502/business.html">here</a>.
 		</p>
 	</footer>
 
 	<script>
-		$(document).ready(function(){
-			$("form").submit(function(event){
+		$(document).ready(function() {
+			$("#loginForm").submit(function(event) {
 				event.preventDefault(); // Prevent the default form submission
-		
+
 				var form_data = $(this).serialize(); // Serialize form data
-		
+
 				$.ajax({
 					type: "POST",
 					url: $(this).attr("action"),
 					data: form_data,
 					dataType: 'json',
-					success: function(response){
+					success: function(response) {
 						// Handle the response here and display an alert or perform actions
 						if (response.message) {
 							alert(response.message);
+							window.location.href = "/Serene 7/templates/index.html";
 						} else if (response.error) {
 							alert(response.error);
 						}
 					},
-					error: function(){
+					error: function() {
 						alert("Error: Unable to process request.");
 					}
 				});
 			});
 		});
-		</script>
+	</script>
 </body>
-
 </html>
