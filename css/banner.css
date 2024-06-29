@@ -1,0 +1,15 @@
+.banner{
+    border-top: 20px solid snow;
+    border-bottom: 20px solid snow;
+    margin-top: 100px;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    object-fit:cover;
+}
+.banner img{
+  max-width: 100%;
+  opacity: 0.75;
+  z-index: -1;
+}

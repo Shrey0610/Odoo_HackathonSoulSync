@@ -1,0 +1,33 @@
+.hero{
+    height: 66vh;
+    object-fit: cover;
+  }
+  
+  .hero img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 40;
+      right: 0;
+      box-sizing: border-box;
+      padding: 0;
+      border: none;
+      margin: auto;
+      display: block;
+      width: 0;
+      height: 40;
+      min-width: 100%;
+      max-width: 100%;
+      min-height: 70%;
+      max-height: 70%;
+      object-fit: cover;
+      z-index: -1;
+      filter: drop-shadow(0.8);
+      filter: saturate(0.9);
+      filter: brightness(0.9);
+      filter: contrast(1);
+      border: 1px solid transparent;
+      border-bottom: 0;
+  
+  }
+  

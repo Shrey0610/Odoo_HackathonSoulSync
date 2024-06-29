@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.after{
+  background: linear-gradient(rgba(226, 234, 255, 0) 0%, rgb(226, 234, 255) 100%);
+}
+
+.navbar {
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    background: radial-gradient(circle at top left, rgba(0, 0, 0, 0.3), transparent 70%), 
+                radial-gradient(circle at top right, rgba(0, 0, 0, 0.3), transparent 70%);
+    transition: background 0.3s ease;
+    z-index: 100;
+}
+
+.navbar.perfixed {
+    background: white; /* Change background to white */
+}
+
+
+.logo{
+    font-size: 48px;
+    font-family: 'Allura', cursive;
+    background: linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(201, 76, 119, 1) 100%);
+    color: white;
+    border: 0.2px solid transparent;
+    border-radius: 10px;
+    padding:10px 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar ul li{
+    list-style-type: none;
+}
+
+.navbar ul li a{
+   text-decoration:none;
+   font-family:Arial, Helvetica, sans-serif;
+   font-size: 18px;
+   font-weight: 300;
+   color: white;
+   box-shadow: gold;
+   transition: color 0.3s ease-in-out;
+}
+
+.a1:after{
+   content: "";
+   position: absolute;
+   background-color: white;
+   height: 3px;
+   width:0%;
+   left:212px;
+   bottom:30px;
+   transition: 0.7s;
+}
+
+.a1:hover:after{
+  width: 3%;
+}
+
+.a2:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width:0%;
+    left:305px;
+    bottom:30px;
+    transition: 0.7s;
+ }
+ 
+ .a2:hover:after{
+   width: 5.5%;
+ }
+
+ .a3:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width:0%;
+    left:435px;
+    bottom:30px;
+    transition: 0.7s;
+ }
+ 
+ .a3:hover:after{
+   width: 9.2%;
+ }
+
+ .a4:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width:0%;
+    left:620px;
+    bottom:30px;
+    transition: 0.7s;
+ }
+ 
+ .a4:hover:after{
+   width: 7.7%;
+ }
+
+ .a5:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width:0%;
+    left:780px;
+    bottom:30px;
+    transition: 0.7s;
+ }
+ 
+ .a5:hover:after{
+   width: 5%;
+ }
+
+ .a6:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width:0%;
+    left:900px;
+    bottom:30px;
+    transition: 0.7s;
+ }
+ 
+ .a6:hover:after{
+   width: 8.5%;
+ }
+
+ .a7:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width:0%;
+    left:1075px;
+    bottom:30px;
+    transition: 0.7s;
+ }
+
+ .a7:hover:after{
+    width: 3%;
+  }
+
+ .a1.perfixed:after,.a2.perfixed:after,.a3.perfixed:after,.a4.perfixed:after,.a5.perfixed:after,
+ .a6.perfixed:after,.a7.perfixed:after{
+    background: linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(201, 76, 119, 1) 100%);
+ }
+
+
+
+.navbar ul li a.button{
+font-weight: 600;
+color: black;
+transition: background 0.3s ease-in-out;
+}
+
+.navbar ul li a.button.perfixed{
+    background: linear-gradient(90deg, rgba(63,94,251,1) 26%, rgba(201,76,119,1) 100%, rgba(252,70,70,1) 100%);
+    color: white;
+}
+
+.navbar ul li a.perfixed{
+   color: black;
+}
+
+.button{
+    border: 1px solid white;
+    padding: 20px 20px;
+    border-radius: 28px;
+    background-color: white;
+}
+
+
+.logo.perfixed{
+    font-family: 'Allura', cursive;
+    font-size: 48px;
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(10,113,244,1) 50%, rgba(84,11,242,0.9472382703081232) 100%);
+    -webkit-text-fill-color: transparent;
+}

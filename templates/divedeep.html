@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/apple-touch-icon.png">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <!--Svg Css Start-->
+    <link href="http://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!--Svg Css End-->
+    <link rel="stylesheet" href="/css/chill.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/divedeep.css">
+    <link rel="stylesheet" href="/css/sleep.css">
+    <title>Serene</title>
+</head>
+<body>
+    <!-------------navbar start------------->
+    <nav class="navbar">
+        <ul>
+            <div onclick = "reh()" class="logo">Serene</div> 
+            <li><a href="/templates/sleep.html" class="a1">Sleep</a></li>
+            <li><a href="/templates/divedeep.html" class="a2">Dive Deep</a></li>
+            <li><a href="/templates/serenebusiness.html" class="a3">Serene Business</a></li>
+            <li><a href="/templates/serenehealth.html" class="a4">Serene Health</a></li>
+            <li><a href="/templates/premium.html" class="a5">Premium</a></li>
+            <li><a href="/templates/blog.html" class="a6">Articles & Blogs</a></li>
+            <li><a href="/templates/login.html" class="a7">Log In</a></li>
+            <li><a href="/templates/login.html" class="button" onclick="meh()">Try Serene For Free</a></li>
+        </ul>
+    </nav>
+    <!-------------navbar end------------->
+    <div class="containersa col-xxl-8 px-4 py-5">
+        <div class="flex-container" style="flex-grow: 2">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="/images/portrait-beautiful-woman-with-straight-dark-hair-smiles-broadly-keeps-eyes-shut-enjoys-pleasant-moment_273609-38937.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"  loading="lazy" style="-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);">
+          </div>
+          <div  style="flex-grow: 8">
+            <br><br>
+            <h1 class="sc-bcXHqe kXIcbv Hero__Heading-sc-13p3ers-2 engZjZ">Anxiety and stress relief whenever you need it</h1>
+            <br>
+            <p class="lead">Learn how to calm anxiety and find the tools for in-the-moment stress relief. Our clinical experts and meditation teachers are here with a wide range of stress relief programs, meditations for anxiety, and guided content to help you soothe anxiety and feel better.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+      <br><br><br><br>
+      <center> <h1 style= "font-size: 2em;     color: rgb(26, 62, 111);">Try a quick breathing exercise to ease your stress.</h1><br><br>
+    <div class="breath" style='color: rgb(26, 62, 111);'>
+      <div class="input">
+        <label>Select Breaths</label>
+        <select class="breath-input">
+          <option value="3">3 Breaths</option>
+          <option value="5">5 Breaths</option>
+          <option value="7">7 Breaths</option>
+        </select>
+      </div>
+      <div class="circle-wrap">
+        <div class="circle-outline"></div>
+        <div class="circle-progress"></div>
+      </div>
+      <p class="breaths">Breaths remaining: <span class="breaths-text">3</span></p>
+      <p class="instructions">Are you ready to start breathing?</p>
+      <button class="start">Begin</button>
+    </div>
+    </center>
+    <div class="chill">
+        <div class="mentalb">
+            <p class="mental">Mental Health Tools for real life</p>
+            <p class="mentt">Calm makes it easy to find what you're looking for and explore it at your own pace. Whether you want to sleep better, feel more relaxed, or improve your focus and productivity, Calm has something for you.</p>
+        </div>
+
+        <div class="menbox">
+          <div class="tabs">
+              <button class="tab-button active" onclick="showContent('sleep')">Sleep</button>
+              <button class="tab-button" onclick="showContent('stress')">Stress</button>
+              <button class="tab-button" onclick="showContent('anxiety')">Anxiety</button>
+              <button class="tab-button" onclick="showContent('other')">Other</button>
+            </div>
+          <div class="tab-container">
+              <div id="sleep-content" class="tab-content active">
+                  <h2>Welcome to Our Sleep Zone</h2>
+                  <p style="font-size: 22px;">Join millions of sound sleepers worldwide. Our 300+ Sleep Stories, sleep meditations, and calming music will guide you off to sleep quickly and naturally. Just press play and drift away.</p><br>
+                  <p>Free Sample: WaterMelon Sugar</p>
+                  <p>Narrated by Harry Styles</p>
+                
+                  <!-- Sample audio clip -->
+                  <audio controls>
+                    <source src="/audio/Watermelon-Sugar---Seaside-SEB(PagalWorld).mp3" type="audio/mpeg">
+
+                  </audio>
+                
+                  <!-- Poster of Harry Styles -->
+                  <div class="harry-styles-poster">
+                    <img src="/images/player-harry.webp" alt="Harry Styles Poster">
+                  </div>
+              </div>
+              <div id="stress-content" class="tab-content">
+                <h2>Get in-the-moment relief from everyday stress and anxiety.</h2>
+                <p style="font-size: 22px;">Our clinical experts and mindfulness teachers are here to support you, with a wide range of programs for work stress, acute anxiety, negative thoughts, and more.</p><br>
+                <p>Free Sample: Overcome Stress and Anxiety</p>
+                <p>Narrated by Dr. Julie Smith</p>
+              
+                <!-- Sample audio clip -->
+                <audio controls>
+                  <source src="/audio/7bacc0fc9d6530b171bd6ed7bab4f3e7.mp4" type="audio/mpeg">
+
+                </audio>
+              
+                <!-- Poster of Harry Styles -->
+                <div class="harry-styles-poster">
+                  <img src="/images/player-stress.webp" alt="Harry Styles Poster">
+                </div>
+              </div>
+              <div id="anxiety-content" class="tab-content">
+                <h2>Tame the distraction dragon.</h2>
+                <p style="font-size: 22px;">Sharpen your focus with soundscapes and music carefully crafted to help you tune out distractions and tap into a state of flow.</p><br>
+                <p>Free Sample: Finding Focus</p>
+                <p>Narrated by Jeff Warren</p>
+                
+                  <!-- Sample audio clip -->
+                  <audio controls>
+                    <source src="/audio/7466488786a895624e6d8286b4e3138f.mp4" type="audio/mpeg">
+
+                  </audio>
+                
+                  <!-- Poster of Harry Styles -->
+                  <div class="harry-styles-poster">
+                    <img src="/images/player-focus.webp" alt="Harry Styles Poster">
+                  </div>
+              </div>
+              <div id="other-content" class="tab-content">
+                <h2>Other tools include-
+                </h2>
+                <p style="font-size: 22px;">
+                    Relaxation,
+                    Building Habits,
+                     Good Vibes and
+                        Physical Wellbeing.</p><br>
+                <p>Free Sample:</p>
+                <p> Rain on Leaves</p>
+                
+                  <!-- Sample audio clip -->
+                  <audio controls>
+                    <source src="/audio/SSPS_0020_RainOnLeaves_2CH_MK_20230802_HomepageCutdown.mp3" type="audio/mpeg">
+
+                  </audio>
+                
+                  <!-- Poster of Harry Styles -->
+                  <div class="harry-styles-poster">
+                    <img src="/images/player-relaxation.webp" alt="Harry Styles Poster">
+                  </div>
+              </div>
+            </div>
+      </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <!-------------footer section start------------->
+
+    <footer class="text-gray-600 body-font" id="foot-5">
+        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+          <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4" id="foot-6">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">COMPANY</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">About</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Carrers</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Press</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Blog</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4" id="foot-6">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">OFFERS</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Buy a Gift</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Redeem a Gift
+                </a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Family Plan</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Calm Health</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4" id="foot-6">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">HELP</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">FAQ</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Contact Us</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Accessibility Statement</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Cookies</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4" id="foot-6">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Address</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Adani Institue of Infrastructure Engineering</a>
+                </li>
+              </nav>
+            </div>
+            
+          </div>
+        </div>
+        <div class="bg-gray-100">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">Copyright © 2023 Serene. All rights reserved
+
+              
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="non+6e"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+
+      <!-------------footer section end------------->
+
+
+
+
+
+    
+
+
+
+    
+
+    <!-------------navbar script start------------->
+    <script src="/packages/navbar.js"></script>
+    <!-------------navbar script end------------->
+    <!-------------chill section script start------------->
+    <script src="/packages/chill.js"></script>
+    <script>
+       
+    function reh(){
+      window.location.href = "/templates/index.html";
+    }
+    </script>
+    <!-------------chill section script end------------->
+</body>
+</html>

@@ -1,0 +1,20 @@
+#review-5{
+    margin-top: 450px;
+  }
+
+#star-5 img{
+    display: flex;
+    position: relative;
+    bottom: 190px;
+    width: 7%;
+    height: 14%;
+    margin-left: 40px;
+  }
+
+#quote img{
+    margin-top: 55px;
+    width: 20%;
+    margin-bottom: 10%;
+    margin-left: 37%;
+    
+  }

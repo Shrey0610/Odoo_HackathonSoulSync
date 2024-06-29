@@ -1,0 +1,187 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+  
+  .breath {
+    padding: 0;
+  
+    font-family: "Poppins", sans-serif;
+    border: 2px solid #ccc;
+        padding: 0px;
+        border-radius: 10px;
+        box-shadow: 10px rgba(0, 0, 0, 0.1);
+        background-color: #f8e1e1;
+        border: 2px solid #333;
+        padding: 20px;
+        max-width: 400px; 
+        box-sizing: border-box;
+  
+        text-align: center;
+  }
+  
+  .breath {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* color: #fff; */
+    /* background: url("/bg.jpg"); */
+    background-size: cover;
+  }
+  
+  body::after {
+    /* content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1; */
+  }
+  
+  .input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  
+  .input label {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .input select {
+    border: none;
+    border-radius: 8px;
+    min-width: 300px;
+    font-size: 16px;
+    padding: 8px 4px;
+    background-color: #6236ff;
+    color: #fff;
+  }
+  
+  .input select:focus {
+    outline: none;
+  }
+  
+  .circle-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .circle-outline {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 15px solid #f1f1f1;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .circle-progress {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #6236ff;
+    border-radius: 50%;
+    transition: 4s ease all;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .circle-grow {
+    transform: scale(5.3);
+  }
+  
+  .breaths {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 24px;
+  }
+  
+  .instructions {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  button {
+    padding: 8px 20px;
+    border-radius: 8px;
+    background-color: #6236ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  }
+  
+  button:hover {
+    background-color: #f1f1f1;
+    color: #6236ff;
+  }
+  
+  .button-inactive {
+    pointer-events: none;
+    background-color: #969696;
+  }
+  
+  
+  
