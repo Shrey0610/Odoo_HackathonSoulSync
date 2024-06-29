@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+body > div {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Description section */
+h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Doctor section */
+.doctor-info {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.doctor-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-info h4 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.doctor-info h4 + h4 {
+    margin-top: 15px;
+}
+
+.expertise, .experience, .time-slot {
+    margin-bottom: 20px;
+}
+
+.expertise h4, .experience h4, .time-slot h5 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.time-slot p {
+    margin: 5px 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body > div {
+        padding: 15px;
+    }
+
+    .doctor-info {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .doctor-info img {
+        margin: 0 auto 15px;
+    }
+}
