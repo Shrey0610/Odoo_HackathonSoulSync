@@ -1,6 +1,9 @@
 # Odoo_HackathonSoulSync
 Welcome to SoulSync, a web application focused on cultivating human connections and promoting mental wellness in the digital age.
 
+## Check out how it works-
+https://drive.google.com/file/d/1KupnlEE0tPcMGB8_iIZKzYZJTCNtXm2d/view?usp=sharing
+
 ## Our core functionality are-
   1. User Authentication and Profiles
   2. Community Building
